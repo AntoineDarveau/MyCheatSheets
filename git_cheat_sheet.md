@@ -25,5 +25,11 @@ to show the available stash. `git stash pop` will pop the `stash@{0}` by default
 git fetch <remote name> <branch name>
 git branch --track <branch name> <remote name>/<branch name>
 ```
+## Cherry-picking 🍒
+- When you only want a specific commit from another branch. Lets say you are on branch `my_branch` and want a commit from branch `cherry-tree`. Then, first do a `git log cherry-tree` to find the commit ID you're interested in. Lets say the the commit ID was `2ejfh983rnfskn`, then do
+```shell
+git checkout my_branch  # Make sure you're on your branch
+git cherry-pick 2ejfh983rnfskn  # cherry pick the specific commit and that's it!
+```
 
 ## Choose which 

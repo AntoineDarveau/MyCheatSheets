@@ -15,3 +15,11 @@ conda env config vars set PYTHONNOUSERSITE=False # To set environment variables
 conda deactivate  # you have to reactivate your environment
 conda activate test-env  # reactivate 
 ```
+
+## add path to your environment
+Usefull when developing new codes. Access annywhere on your computer.
+```shell
+conda develop path/to/the/code
+```
+Some versions of miniconda do not have the `develop` command, so manually add the path in the file
+`<path-to-miniconda>/envs/<your_env>/lib/pythonX.X/site-packages/conda.pth`. Create it if it does not exist.
